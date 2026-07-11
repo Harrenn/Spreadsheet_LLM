@@ -1,0 +1,37 @@
+# Local work and generated files
+working/*
+!working/README.md
+*.xlsx
+*.xls
+*.csv
+!examples/**/*.csv
+models/
+*.gguf
+outputs/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and notebooks
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# System/editor/temp
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.tmp
+~$*
