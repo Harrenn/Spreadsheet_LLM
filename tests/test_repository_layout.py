@@ -22,6 +22,7 @@ class RepositoryLayoutTests(unittest.TestCase):
                     self.assertIsNone(cell.get("execution_count"))
                     self.assertEqual(cell.get("outputs"), [])
         self.assertIn("SPREADSHEET_LLM_INPUT_PATH", combined_source)
+        self.assertIn("SPREADSHEET_LLM_PSGC_PATH", combined_source)
         self.assertIn("GGUF_MODEL_PATH", combined_source)
         self.assertNotIn("/root/.cache/", combined_source)
 
